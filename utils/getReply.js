@@ -50,6 +50,15 @@ function getReply(message) {
 	    });
     } 
   }
+  if(message.content.toLowerCase().includes("richtig")||message.content.toLowerCase().includes("korrect")||message.content.toLowerCase().includes("Martin")){
+     message.reply({
+	     files: [{
+		     attachment: 'gods work/richtig.png',
+		     name: 'richtig.png',
+		     description: 'RICHTIG'
+	     }]
+     });
+  }
 
   if(message.content.toLowerCase().includes("rick")||message.content.toLowerCase().includes(" nie ")){
     message.reply({
